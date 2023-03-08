@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion y registro</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+
+    <div class="container">
+        <h1>register and login</h1>
+            
+            <div class="input-group">
+                <input type="text" id="user" class="user-input input-style" name="usuario">
+                <label id="label-user" class="user-label label-style">Nombre de usuario</label>
+            </div>
+            
+            <div class="input-group">
+                <input type="text" id="correo" class="correo-input input-style"name="correo" >
+                <label id="label-correo" class="correo-label label-style">Correo electrónico</label>
+            </div>
+            
+            <div class="input-group">
+                <input type="password" id="password" class="password-input input-style" placeholder="*NOTA* Puedes agregar simbolos" name="contrasena">
+                <label id="label-password" class="password-label label-style">Contraseña</label>
+            </div>
+
+
+            <button type="submit" id="register">Registrarse</button>
+
+
+        </form>
+        
+            <button type="submit" id="login">Iniciar sesion</button>
+            <button type="button" id="ver"> Mostrar Contraseña</button>
+
+    </div>
+
+    <script src="Code/code.js"></script>
+</body>
+</html>

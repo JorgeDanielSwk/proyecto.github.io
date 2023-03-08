@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    background: rgb(145, 145, 145);
+  }
+  
+  .header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    height: 65px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    float: left;
+  }
+  
+  .logo a {
+    font-size: 28px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .info {
+    float: right;
+    margin-top: 15px;
+  }
+  
+  .info ul {
+    list-style: none;
+  }
+  
+  .info ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .info ul li:first-child {
+    margin-left: 0;
+  }
+  
+  .barra {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .barra ol ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .barra ol ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .colaboradores {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .colaboradores ul {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  .colaboradores ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .colaboradores ul li:last-child {
+    margin-right: 0;
+  }
+
+  

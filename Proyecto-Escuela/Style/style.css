@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(200deg, rgba(140, 255, 0, 0.502), rgba(0, 197, 62, 0.699), rgb(0, 250, 0));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 450px;
+    height: 480px;
+    background: linear-gradient(200deg, rgb(106, 255, 0), rgb(0, 255, 238));
+    border-radius: 25px;
+    box-shadow: 9px 7px 8px rgb(0, 123, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 27px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+} */
+
+.input-style {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid black;
+    
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid blue;
+}
+
+.label-style {
+    
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-0%);
+    transition: transform 0.6s ease-out, color 0.6s;
+    font-size: 16px;
+}
+
+input:focus ~ .label-style{
+    transform: translate(-17%, -30%) scale(0.7);
+    font-size: 27px;
+    color: rgb(169, 0, 191);
+  }
+
+  .label-style.active {
+    top: 0px;
+    font-size: 16px;
+    color: blue;
+  }
+  
+  
+
+
+/* 
+.password-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    position: absolute;
+    margin-top: 36px;
+} 
+ */
+
+
+input[type="text"],
+input[type="password"],
+input[type= "correo"] {
+    width: 100%;
+    font-family: inherit;
+    padding: .6em .3em;
+    padding-left:  17px;
+    font-size: 17px;
+    /* border-radius: 5px; */
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+    /* border: 2px solid rgb(109, 109, 109); */
+    border-bottom: 2px solid  rgb(109, 109, 109);
+    margin-top: 25px;
+}
+input[id="password"]{
+    border-bottom: 2px solid rgb(109, 109, 109) ;
+    margin-top: 15px;
+}
+input[id="password"]::placeholder{
+    
+    color: black;
+    margin-top: 15px;
+    padding-left: 100px;
+}
+
+
+
+button[id="register"] {
+    width: 35%;
+    padding: 10px;
+    background-color: #3866f2;
+    color: white;
+    font-size: 16px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 75px;
+    margin-left: -190px;
+}
+
+button[id="login"] {
+    width: 35%;
+    padding: 10px;
+    background-color: #3866f2;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: -38px;
+    margin-left: 190px;
+}
+button[id="ver"] {
+    width: 48%;
+    padding: 10px;
+    background-color: #3866f2;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: -107px;
+    margin-left: -8px;
+}
+
+button[id="login"]:active {
+    width: 35%;
+    padding: 10px;
+    background-color: #7c9dff;
+    color: white;
+    font-size: 16px;
+    border-radius: 55px;
+    border: none;
+    cursor: pointer;
+    margin-top: -38px;
+    margin-left: 190px;
+}
+
+button[id="register"]:active {
+    width: 35%;
+    padding: 10px;
+    background-color: #7c9dff;
+    color: white;
+    font-size: 16px;
+    border-radius: 55px;
+    border: none;
+    cursor: pointer;
+    margin-top: 75px;
+    margin-left: -190px;
+}
+button[id="ver"]:active {
+    width: 48%;
+    padding: 10px;
+    background-color: #7c9dff;
+    color: white;
+    font-size: 16px;
+    border-radius: 55px;
+    border: none;
+    cursor: pointer;
+    margin-top: -107px;
+    margin-left: -8px;
+}
